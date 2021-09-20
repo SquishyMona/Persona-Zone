@@ -2,6 +2,10 @@
     <head>
         <title>Persona Zone</title>
         <style>
+            @font-face {
+                font-family: "P5Font";
+                src: url(Styles/Fonts/p5hatty1.ttf);
+            }
             .title{
                 height: 100px;
                 background-color: rgb(216, 112, 112);
@@ -9,6 +13,8 @@
                 top: 10px;
                 left: 120px;
                 width: 700px;
+                font-family: "P5Font";
+                font-size: 150px;
             }
 
             .logo{
@@ -20,9 +26,20 @@
             }
 
             .nav{
-                height: 50px;
+                display: grid;
+                grid: 50px / auto auto auto auto auto auto;
+                grid-gap: 10px;
+                padding: 10px;
                 background-color: rgb(231, 54, 54);
+                font-family: "P5Font";
 
+            }
+
+            .nav > div {
+                background-color: rgb(216, 112, 112);
+                text-align: center;
+                padding: 14px 0;
+                font-size: 30px;
             }
 
             .main{
@@ -36,8 +53,18 @@
         </script>
     </head>
     <body>
-        <div class="logo">Logo</div> <div class="title">Title</div>
-        <div class="nav">Navigation</div>
+        <div class="logo">
+            <img src=Images/PQ2Logo.png alt=logo height="100px" width="100px">
+        </div> 
+        <div class="title">Persona Zone</div>
+        <div class="nav">
+            <div class="item1">Page1</div>
+            <div class="item2">Page2</div>
+            <div class="item3">Page3</div>
+            <div class="item4">Page4</div>
+            <div class="item5">Page5</div>
+            <div class="item6">Page6</div>
+        </div>
         <div class="main">Main Content Area</div>
     </body>
 </html>
