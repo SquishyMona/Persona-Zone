@@ -4,7 +4,12 @@
         <style>
             @font-face {
                 font-family: "P5Font";
-                src: url(Styles/Fonts/p5hatty1.ttf);
+                src: url(Styles/Fonts/p5hatty.ttf);
+            }
+
+            @font-face {
+                font-family: "FOT-SkipStd";
+                src: url(Styles/Fonts/FOT-SkipStd-B.otf);
             }
             .title{
                 height: 100px;
@@ -51,16 +56,22 @@
             .p5Area{
                 height: 500px;
                 background-color: red;
+                background-image: url(Images/P5/Persona5StarsBackground.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "P5Font";
             }
 
             .p4Area{
                 height: 500px;
                 background-color: yellow;
+                font-family: "FOT-SkipStd";
             }
 
             .p3Area{
                 height: 500px;
-                background-color:rgb(0, 110, 255)
+                background-color:rgb(0, 110, 255);
+                font-family: "FOT-SkipStd";
             }
 
             .p2Area{
@@ -83,18 +94,28 @@
         </div> 
         <div class="title">Persona Zone</div>
         <div class="nav">
-            <div class="item1">Page1</div>
+            <div class="item1">
+                <a href= Page1.html target="main">
+                    Page1
+                </a>
+            </div>
             <div class="item2">Page2</div>
             <div class="item3">Page3</div>
             <div class="item4">Page4</div>
             <div class="item5">Page5</div>
             <div class="item6">Page6</div>
         </div>
+        <iframe name="main"></iframe>
         <div class="main">Main Content Area</div>
         <div class="p5Area">
-            <img src=Images/P5/Persona5StarsBackground.jpg height='500px' width="100%">
+            <h1>Persona 5 Content Area</h1>
         </div>
-        <div class="p4Area">Persona 4 Content Area</div>
+        <div class="p4Area">
+            <h1>Persona 4 Content Area</h1>
+            <h2>This is where a general synopsis of Persona 4 will go.</h2>
+            I am planning on making this a button that will navigate to the Persona 4 page I will make
+            This general outline for this area applies to all other game specific areas on this page.
+        </div>
         <div class="p3Area">Persona 3 Content Area</div>
         <div class="p2Area">Persona 2 Content Area</div>
         <div class="p1Area">Persona 1 Content Area</div>    
