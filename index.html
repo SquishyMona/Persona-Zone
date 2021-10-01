@@ -37,7 +37,8 @@
                 padding: 10px;
                 background-color: rgb(231, 54, 54);
                 font-family: "P5Font";
-
+                position: sticky;
+                top: 0
             }
 
             .nav > div {
@@ -56,21 +57,29 @@
             .p5Area{
                 height: 500px;
                 background-color: red;
-                background-image: url(Images/P5/Persona5StarsBackground.jpg);
+                background-image: url(Images/P5/P5StarsBackground2.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 font-family: "P5Font";
+                color: white;
             }
 
             .p4Area{
                 height: 500px;
                 background-color: yellow;
+                background-image: url(Images/P4/Persona4RainbowBackground.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
                 font-family: "FOT-SkipStd";
+                padding: 20px;
             }
 
             .p3Area{
                 height: 500px;
                 background-color:rgb(0, 110, 255);
+                background-image: url(Images/P3/Persona3TartarusBackground.png);
+                background-repeat: no-repeat;
+                background-size: cover;
                 font-family: "FOT-SkipStd";
             }
 
@@ -108,13 +117,22 @@
         <iframe name="main"></iframe>
         <div class="main">Main Content Area</div>
         <div class="p5Area">
-            <h1>Persona 5 Content Area</h1>
+            <span>
+                <img src=Images/P5/Persona5Logo.png width="300px" height="175px" style="position: relative; top: 150px">
+            </span>
         </div>
         <div class="p4Area">
-            <h1>Persona 4 Content Area</h1>
-            <h2>This is where a general synopsis of Persona 4 will go.</h2>
-            I am planning on making this a button that will navigate to the Persona 4 page I will make
-            This general outline for this area applies to all other game specific areas on this page.
+            <span>
+                <img src=Images/P4/Persona4Logo.png width="300px" height="200px" style="position: relative; top:150px;"
+            </span>
+            <span style="position: relative; left: 400px">
+                <h2>This is where a general synopsis of Persona 4 will go.</h2>
+            <p style="text-align: center; ">
+                I am planning on making this a button that will navigate to the Persona 4 page 
+                I will make. This general outline for this area applies to all other game 
+                specific areas on this page.
+            </p>
+            </span>
         </div>
         <div class="p3Area">Persona 3 Content Area</div>
         <div class="p2Area">Persona 2 Content Area</div>
