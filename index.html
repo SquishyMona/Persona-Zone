@@ -94,7 +94,13 @@
             }
         </style>
         <script>
-
+            variable = new Array()
+            variable[0] = "index"
+            variable[1] = "Page1"
+            function newpage(clicked)
+            {
+                p5area.location.href = variable[click] + ".html"
+            }
         </script>
     </head>
     <body>
@@ -117,9 +123,9 @@
         <iframe name="main"></iframe>
         <div class="main">Main Content Area</div>
         <div class="p5Area">
-            <span>
+            <button onclick="newpage(1)">
                 <img src=Images/P5/Persona5Logo.png width="300px" height="175px" style="position: relative; top: 150px">
-            </span>
+            </button>
         </div>
         <div class="p4Area">
             <span>
