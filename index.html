@@ -62,6 +62,7 @@
                 background-size: cover;
                 font-family: "P5Font";
                 color: white;
+                padding: 20px;
             }
 
             .p4Area{
@@ -77,31 +78,36 @@
             .p3Area{
                 height: 500px;
                 background-color:rgb(0, 110, 255);
-                background-image: url(Images/P3/Persona3TartarusBackground.png);
+                background-image: url(Images/P3/Persona3Blue.jpeg);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size:150%;
                 font-family: "FOT-SkipStd";
+                padding: 20px;
             }
 
             .p2Area{
                 height: 500px;
                 background-color: rgb(255, 97, 24);
+                padding: 20px;
             }
 
             .p1Area{
                 height: 500px;
                 background-color: rgb(176, 94, 253);
+                padding: 20px;
             }
         </style>
-        <script>
+    <!--
+            <script>
             variable = new Array()
             variable[0] = "index"
             variable[1] = "Page1"
-            function newpage(clicked)
+            function newpage(click)
             {
-                p5area.location.href = variable[click] + ".html"
+                main.location.href = variable[click] + ".html"
             }
         </script>
+    -->
     </head>
     <body>
         <div class="logo">
@@ -123,24 +129,49 @@
         <iframe name="main"></iframe>
         <div class="main">Main Content Area</div>
         <div class="p5Area">
-            <button onclick="newpage(1)">
-                <img src=Images/P5/Persona5Logo.png width="300px" height="175px" style="position: relative; top: 150px">
-            </button>
+            <img src=Images/P5/Persona5Logo.png width="300px" height="175px" style="position: relative; top: 150px">
+            <span style="position: relative; left: 200px; bottom: 100px">
+                <h2 style="text-align: center; font-size:300%;">Steal the hearts of evil doers <br>and reform society with The Phantom Thieves</h2>
+            <p style="text-align: center; font-size:150%">
+                Join the Phantom Thieves as they infiltrate the Metaverse, <br>
+                a world where people's deepest and darkest desires take form, and <br>
+                change the hearts of criminals all over Tokyo to make them confess <br>
+                their crimes, while also living the life of a high school student <br> 
+                with a criminal record in this critically acclaimed JRPG.
+            </p>
+            </span>
         </div>
         <div class="p4Area">
             <span>
                 <img src=Images/P4/Persona4Logo.png width="300px" height="200px" style="position: relative; top:150px;"
             </span>
-            <span style="position: relative; left: 400px">
-                <h2>This is where a general synopsis of Persona 4 will go.</h2>
+            <span style="position: relative; left: 200px; bottom: 100px">
+                <h2 style="text-align: center;">Join The Investigation Team as <br> they solve the mystery of the fog</h2>
             <p style="text-align: center; ">
-                I am planning on making this a button that will navigate to the Persona 4 page 
-                I will make. This general outline for this area applies to all other game 
-                specific areas on this page.
+                Experience the dark story of a series of mysterious murders <br>
+                in the small town of Inaba, and traverse the TV world <br>
+                to get to the bottom of who's behind these strange homocides, <br>
+                while also enjoying spending time with your friends <br> 
+                in this light-hearted, but also dark entry in the Persona series
             </p>
             </span>
         </div>
-        <div class="p3Area">Persona 3 Content Area</div>
+        <div class="p3Area">
+            <span>
+                <img src=Images/P3/Persona3Logo.png width="350px" height="200px" style="position: relative; top:150px;"
+            </span>
+            <span style="position: relative; left: 200px; bottom: 100px">
+                <h2 style="text-align: center;">Traverse Tartarus and solve the mystery<br>of the Dark Hour with SEES</h2>
+            <p style="text-align: center; ">
+                Make friends, go to school, and live out your life as a<br>
+                high school student during the day, and defeat shadows<br>
+                during the Dark Hour, the "hidden hour" between one day and<br>
+                the next, where monsters come out and normal humans turn <br> 
+                into coffins, and investigate what the Dark Hour is, and <br>
+                why it exists in this deep, dark, and intense Persona story.
+            </p>
+            </span>
+        </div>
         <div class="p2Area">Persona 2 Content Area</div>
         <div class="p1Area">Persona 1 Content Area</div>    
     </body>
