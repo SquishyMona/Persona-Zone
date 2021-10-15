@@ -20,25 +20,29 @@
                 src: url(Styles/Fonts/P1_p2-Regular.otf);
             }
 
+            @font-face
+            {
+                font-family: "P5CallingCard";
+                src: url(Styles/Fonts/EarwigFactoryRG.ttf);
+            }
+
             .title
             {
                 height: 100px;
-                background-color: rgb(216, 112, 112);
                 position: absolute; 
-                top: 10px;
+                top: -10px;
                 left: 120px;
                 width: 700px;
-                font-family: "P5Font";
-                font-size: 150px;
+                font-family: "P5CallingCard";
+                font-size: 100px;
+                padding: 20px;
             }
 
             .logo
             {
                 height: 100px;
                 width: 100px;
-                border-style: solid;
-                border-color: rgb(216, 112, 112);
-                border-width: 5px;
+                padding: 20px;
             }
 
             .nav
@@ -84,6 +88,12 @@
                 padding: 20px;
             }
 
+            .p5Area a
+            {
+                text-decoration: none;
+                color: white;
+            }
+
             .p4Area
             {
                 height: 500px;
@@ -93,6 +103,13 @@
                 background-size: cover;
                 font-family: "FOT-SkipStd";
                 padding: 20px;
+                color: black;
+            }
+
+            .p4area a
+            {
+                text-decoration: none;
+                color: black;
             }
 
             .p3Area
@@ -104,6 +121,12 @@
                 background-size:150%;
                 font-family: "FOT-SkipStd";
                 padding: 20px;
+            }
+
+            .p3Area a
+            {
+                text-decoration: none;
+                color: black;
             }
 
             .p2Area
@@ -118,6 +141,12 @@
                 color: white;
             }
 
+            .p2Area a
+            {
+                text-decoration: none;
+                color: white;
+            }
+
             .p1Area
             {
                 height: 500px;
@@ -126,6 +155,12 @@
                 font-family: "P1-2Font";
                 background-image: url(Images/P1/PersonaBackground.png);
                 background-size: cover;
+            }
+
+            .p1Area a
+            {
+                text-decoration: none;
+                color: white;
             }
         </style>
     <!--
@@ -140,9 +175,13 @@
         </script>
     -->
     </head>
-    <body>
+    <body style="background-color: gray;">
+
+        <!--Begin logo, title, and nav bar-->
         <div class="logo">
-            <img src=Images/PQ2HatLogo.png alt=logo height="100px" width="100px">
+            <a href="index.html">
+                <img src=Images/PQ2HatLogo.png alt=logo height="100px" width="100px">
+            </a>
         </div> 
         <div class="title">Persona Zone</div>
         <div class="nav">
@@ -175,91 +214,131 @@
                 </a>
             </div>
         </div>
-        <!-- <iframe name="main"></iframe> -->
+        <!--End logo, title, and nav bar-->
+    
+        <!--Begin main area-->
         <div class="main">
-            Main Content Area <br>
+            <h1 style="font-size: 100px; text-align:center;">Welcome to Persona Zone!</h1>
             <span>
-                Welcome to Persona Zone, a website about anything and everything Persona! Scroll down this page to see <br>
-                all the different Persona games and what they have to offer. Find something you might like? Click on <br>
-                it to learn even more about it! 
+                <p style="text-align: center; font-size: 30px">
+                    Welcome to Persona Zone, a website about anything and everything Persona! Scroll down this page to see <br>
+                    all the different Persona games and what they have to offer. Find something you might like? Click on <br>
+                    it to learn even more about it! 
+                </p>
             </span>
         </div>
+        <!--End main area-->
+
+        <!--Begin Persona 5 area-->
         <div class="p5Area">
-            <img src=Images/P5/Persona5Logo.png width="300px" height="175px" style="position: relative; top: 150px">
-            <span style="position: relative; left: 200px; bottom: 100px">
-                <h2 style="text-align: center; font-size:300%;">Steal the hearts of evil doers <br>and reform society with The Phantom Thieves</h2>
-            <p style="text-align: center; font-size:150%">
-                Join the Phantom Thieves as they infiltrate the Metaverse, <br>
-                a world where people's deepest and darkest desires take form, and <br>
-                change the hearts of criminals all over Tokyo to make them confess <br>
-                their crimes, while also living the life of a high school student <br> 
-                with a criminal record in this critically acclaimed JRPG.
-            </p>
-            </span>
+            <a href="p5.html">
+                <div>
+                    <img src=Images/P5/Persona5Logo.png width="300px" height="175px" style="position: relative; top: 150px">
+                    <span style="position: relative; left: 200px; bottom: 100px">
+                        <h2 style="text-align: center; font-size:300%;">Steal the hearts of evil doers <br>and reform society with The Phantom Thieves</h2>
+                    <p style="text-align: center; font-size:150%">
+                        Join the Phantom Thieves as they infiltrate the Metaverse, <br>
+                        a world where people's deepest and darkest desires take form, and <br>
+                        change the hearts of criminals all over Tokyo to make them confess <br>
+                        their crimes, while also living the life of a high school student <br> 
+                        with a criminal record in this critically acclaimed JRPG.
+                    </p>
+                    </span>
+                </div>
+            </a>
         </div>
-        <div class="p4Area">
-            <span>
-                <img src=Images/P4/Persona4Logo.png width="300px" height="200px" style="position: relative; top:150px;"
-            </span>
-            <span style="position: relative; left: 200px; bottom: 100px">
-                <h2 style="text-align: center;">Join The Investigation Team as <br> they solve the mystery of the fog</h2>
-            <p style="text-align: center; ">
-                Experience the dark story of a series of mysterious murders <br>
-                in the small town of Inaba, and traverse the TV world <br>
-                to get to the bottom of who's behind these strange homocides, <br>
-                while also enjoying spending time with your friends <br> 
-                in this light-hearted, but also dark entry in the Persona series
-            </p>
-            </span>
+        <!--End Persona 5 area-->
+
+        <!--Begin Persona 4 area-->
+        <div class="p4area">
+            <a href="p4.html">
+                <div>
+                    <span>
+                        <img src=Images/P4/Persona4Logo.png width="300px" height="200px" style="position: relative; top:150px;"
+                    </span>
+                    <span style="position: relative; left: 200px; bottom: 100px">
+                        <h2 style="text-align: center;">Join The Investigation Team as <br> they solve the mystery of the fog</h2>
+                    <p style="text-align: center; ">
+                        Experience the dark story of a series of mysterious murders <br>
+                        in the small town of Inaba, and traverse the TV world <br>
+                        to get to the bottom of who's behind these strange homocides, <br>
+                        while also enjoying spending time with your friends <br> 
+                        in this light-hearted, but also dark entry in the Persona series
+                    </p>
+                    </span>
+                </div>
+            </a>
         </div>
+        <!--End Persona 4 area-->
+
+        <!--Begin Persona 3 area-->
         <div class="p3Area">
-            <span>
-                <img src=Images/P3/Persona3Logo.png width="350px" height="200px" style="position: relative; top:150px;"
-            </span>
-            <span style="position: relative; left: 200px; bottom: 100px">
-                <h2 style="text-align: center;">Traverse Tartarus and solve the mystery<br>of the Dark Hour with SEES</h2>
-                <p style="text-align: center; ">
-                Make friends, go to school, and live out your life as a<br>
-                high school student during the day, and defeat shadows<br>
-                during the Dark Hour, the "hidden hour" between one day and<br>
-                the next, where monsters come out and normal humans turn <br> 
-                into coffins, and investigate what the Dark Hour is, and <br>
-                why it exists in this deep, dark, and intense Persona story.
-            </p>
-            </span>
+            <a href="p3.html">
+                <div>
+                    <span>
+                        <img src=Images/P3/Persona3Logo.png width="350px" height="200px" style="position: relative; top:150px;"
+                    </span>
+                    <span style="position: relative; left: 200px; bottom: 100px">
+                        <h2 style="text-align: center;">Traverse Tartarus and solve the mystery<br>of the Dark Hour with SEES</h2>
+                        <p style="text-align: center; ">
+                        Make friends, go to school, and live out your life as a<br>
+                        high school student during the day, and defeat shadows<br>
+                        during the Dark Hour, the "hidden hour" between one day and<br>
+                        the next, where monsters come out and normal humans turn <br> 
+                        into coffins, and investigate what the Dark Hour is, and <br>
+                        why it exists in this deep, dark, and intense Persona story.
+                    </p>
+                    </span>
+                </div>
+            </a>
         </div>
+        <!--Begin Persona 3 area-->
+
+        <!--Begin Persona 2 area-->
         <div class="p2Area">
-            <span>
-                <img src=Images/P2/Persona2Logo.svg.png width="400px" height="100px" style="position: relative; top:200px;"
-            </span>
-            <span style="position: relative; left: 200px;">
-                <h2 style="text-align: center; font-size: 250%">Solve the mystery of the Joker and<br>the Persona Game with Tatsuya and Maya</h2>
-                <p style="text-align: center; font-size: 150%;">
-                Rumors have started becoming reality in your home city, and<br>
-                it all comes back to one person; the Joker, a mysterious<br>
-                person who, when summoned, forces people to tell them their wishes. <br> 
-                If they refuse, they are turned into emotion-less shells, unable <br>
-                to do anything. You and your team are determined to get to the <br>
-                bottom of this, and defeat the Joker once and for all!
-            </p>
-            </span>
+            <a href="p2.html">
+                <div>
+                    <span>
+                        <img src=Images/P2/Persona2Logo.svg.png width="400px" height="80px" style="position: relative; top:200px;"
+                    </span>
+                    <span style="position: relative; left: 200px;">
+                        <h2 style="text-align: center; font-size: 250%">Solve the mystery of the Joker and<br>the Persona Game with Tatsuya and Maya</h2>
+                        <p style="text-align: center; font-size: 150%;">
+                        Rumors have started becoming reality in your home city, and<br>
+                        it all comes back to one person; the Joker, a mysterious<br>
+                        person who, when summoned, forces people to tell them their wishes. <br> 
+                        If they refuse, they are turned into emotion-less shells, unable <br>
+                        to do anything. You and your team are determined to get to the <br>
+                        bottom of this, and defeat the Joker once and for all!
+                    </p>
+                    </span>
+                </div>
+            </a>
         </div>
+        <!--End Persona 2 area-->
+
+        <!--Begin Persona 1 area-->
         <div class="p1Area">
-            <span>
-                <img src=Images/P1/PersonaLogo.png width="400px" height="100px" style="position: relative; top:200px;"
-            </span>
-            <span style="position: relative; left: 200px;">
-                <h2 style="text-align: center; font-size: 250%">End the demon overrun of <br> your town in the original Persona</h2>
-                <p style="text-align: center; font-size: 150%;">
-                One day, you and your friends decide to play the Persona Game,<br>
-                a ritual type game similar to "Bloody Mary". While playing, you<br>
-                and your friends fall unconcious and find yourselves in a strange <br> 
-                world. You are greeted by a man named Philemon, who grants you all <br>
-                the power to summon Personas, a manefestation of your inner <br>
-                personalities. Shortly after this, demons start appearing in your town, <br>
-                and its up to you to stop them!
-            </p>
-            </span>
+            <a href="p1.html">
+                <div>
+                    <span>
+                        <img src=Images/P1/PersonaLogo.png width="400px" height="80px" style="position: relative; top:230px;"
+                    </span>
+                    <span style="position: relative; left: 200px;">
+                        <h2 style="text-align: center; font-size: 250%">End the demon overrun of <br> your town in the original Persona</h2>
+                        <p style="text-align: center; font-size: 150%;">
+                        One day, you and your friends decide to play the Persona Game,<br>
+                        a ritual type game similar to "Bloody Mary". While playing, you<br>
+                        and your friends fall unconcious and find yourselves in a strange <br> 
+                        world. You are greeted by a man named Philemon, who grants you all <br>
+                        the power to summon Personas, a manefestation of your inner <br>
+                        personalities. Shortly after this, demons start appearing in your town, <br>
+                        and its up to you to stop them!
+                    </p>
+                    </span>
+                </div>
+            </a>
         </div>    
+        <!--End Persona 1 area-->
     </body>
 </html>
