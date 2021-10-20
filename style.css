@@ -1,0 +1,187 @@
+            @font-face
+            {
+                font-family: "P5Font";
+                src: url(Styles/Fonts/p5hatty.ttf);
+            }
+
+            @font-face
+            {
+                font-family: "FOT-SkipStd";
+                src: url(Styles/Fonts/FOT-SkipStd-B.otf);
+            }
+
+            @font-face
+            {
+                font-family: "P1-2Font";
+                src: url(Styles/Fonts/P1_p2-Regular.otf);
+            }
+
+            @font-face
+            {
+                font-family: "P5CallingCard";
+                src: url(Styles/Fonts/EarwigFactoryRG.ttf);
+            }
+
+            .title
+            {
+                height: 100px;
+                position: absolute; 
+                top: -10px;
+                left: 120px;
+                width: 700px;
+                font-family: "P5CallingCard";
+                font-size: 100px;
+                padding: 20px;
+            }
+
+            .title-secondary
+            {
+                height: 50px;
+                position: absolute; 
+                top: -5px;
+                left: 75px;
+                width: 700px;
+                font-family: "P5CallingCard";
+                font-size: 50px;
+                padding: 20px;
+            }
+
+            .logo
+            {
+                height: 100px;
+                width: 100px;
+                padding: 20px;
+            }
+
+            .logo-secondary
+            {
+                height: 50px;
+                width: 50px;
+                padding: 20px;
+            }
+
+            .nav
+            {
+                display: grid;
+                grid: 50px / auto auto auto auto auto auto;
+                grid-gap: 10px;
+                padding: 10px;
+                background-color: rgb(231, 54, 54);
+                font-family: "P5Font";
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+
+            .nav > div
+            {
+                background-color: rgb(216, 112, 112);
+                text-align: center;
+                padding: 14px 0;
+                font-size: 30px;
+            }
+
+            .main
+            {
+                height: 400px;
+                background-color: grey;
+                font-family: "P5Font";
+                padding: 20px;
+                top: 100px;
+
+            }
+
+            .p5Area
+            {
+                height: 500px;
+                background-color: red;
+                background-image: url(Images/P5/P5StarsBackground2.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "P5Font";
+                color: white;
+                padding: 20px;
+                
+            }
+
+
+            @keyframes expand
+            {
+                from {height: 300px;}
+                to  {height: 500px;}
+            }
+
+            .p5Area a
+            {
+                text-decoration: none;
+                color: white;
+            }
+
+            .p4Area
+            {
+                height: 500px;
+                background-color: yellow;
+                background-image: url(Images/P4/Persona4RainbowBackground.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "FOT-SkipStd";
+                padding: 20px;
+                color: black;
+            }
+
+            .p4area a
+            {
+                text-decoration: none;
+                color: black;
+            }
+
+            .p3Area
+            {
+                height: 500px;
+                background-color:rgb(0, 110, 255);
+                background-image: url(Images/P3/Persona3Blue.jpeg);
+                background-repeat: no-repeat;
+                background-size:150%;
+                font-family: "FOT-SkipStd";
+                padding: 20px;
+            }
+
+            .p3Area a
+            {
+                text-decoration: none;
+                color: black;
+            }
+
+            .p2Area
+            {
+                height: 500px;
+                background-color: rgb(255, 97, 24);
+                padding: 20px;
+                font-family: "P1-2Font";
+                background-image: url(Images/P2/Persona2Background.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+            }
+
+            .p2Area a
+            {
+                text-decoration: none;
+                color: white;
+            }
+
+            .p1Area
+            {
+                height: 500px;
+                background-color: rgb(176, 94, 253);
+                padding: 20px;
+                font-family: "P1-2Font";
+                background-image: url(Images/P1/PersonaBackground.png);
+                background-size: cover;
+            }
+
+            .p1Area a
+            {
+                text-decoration: none;
+                color: white;
+            }
