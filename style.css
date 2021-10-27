@@ -117,6 +117,17 @@
                 
             }
 
+            .p5Box
+            {
+                background-color: red;
+                height: 250px;
+                width: 500px;
+                border: 10px solid black;
+                font-size: 200%;
+                padding: 20px;
+                text-align: center;
+            }
+
 
             @keyframes expand
             {
