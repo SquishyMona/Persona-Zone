@@ -142,6 +142,17 @@
                 color: white;
             }
 
+            .p4Page
+            {
+                height:500%;
+                background-color: yellow;
+                background-repeat: repeat;
+                background-position: center top;
+                font-family: "FOT-SkipStd";
+                color: black;
+                padding: 20px;
+            }
+
             .p4Area
             {
                 height: 500px;
