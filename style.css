@@ -210,6 +210,28 @@
                 text-align: center;
             }
 
+            .p2Page
+            {
+                height:500%;
+                background-color: rgb(255, 127, 8);
+                background-repeat: repeat;
+                background-position: center top;
+                font-family: "P1-2Font";
+                color: black;
+                padding: 20px;
+            }
+
+            .p2Box
+            {
+                background-color: rgb(255, 127, 8);
+                height: 250px;
+                width: 500px;
+                border: 10px solid black;
+                font-size: 130%;
+                padding: 20px;
+                text-align: center;
+            }
+
             .p2Area
             {
                 height: 500px;
