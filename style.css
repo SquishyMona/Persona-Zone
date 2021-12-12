@@ -265,3 +265,51 @@
                 text-decoration: none;
                 color: white;
             }
+
+            .pqArea
+            {
+                height: 600px;
+                background-color: red;
+                background-image: url(Images/PQ/pq2-background.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "P5Font";
+                color: white;
+                padding: 20px;
+            }
+
+            .p4aArea
+            {
+                height: 600px;
+                background-color: rgb(189, 0, 0);
+                background-image: url(Images/P4A/background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "FOT-SkipStd";
+                color: white;
+                padding: 20px;
+            }
+
+            .pdArea
+            {
+                height: 600px;
+                background-color: rgb(0, 168, 36);
+                background-image: url(Images/PD/background3-5.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "P5Font";
+                color: white;
+                padding: 20px;
+            }
+
+            .p5sArea
+            {
+                height: 600px;
+                background-color: rgb(168, 0, 0);
+                background-image: url(Images/P5/Persona5StrikersBackground.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "P5Font";
+                color: white;
+                padding: 20px;
+            }
