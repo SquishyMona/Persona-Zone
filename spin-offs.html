@@ -2,6 +2,29 @@
     <head>
         <title>Persona Zone - Spin-Offs</title>
         <link rel="stylesheet" href="style.css">
+
+        <script>
+            video = new Array()
+            video[1] = "https://www.youtube.com/embed/MgNnOYpED3g"
+            video[2] = "https://www.youtube.com/embed/3AALUT7rqZY"
+            video[3] = "https://www.youtube.com/embed/esQXF9UGFw0"
+            video[4] = "https://www.youtube.com/embed/zD1Ea7satoQ"
+            video[5] = "https://www.youtube.com/embed/b0YpE76JQoM"
+            video[6] = "https://www.youtube.com/embed/r_Lw4683vkM"
+            video[7] = "https://www.youtube.com/embed/CtbjStPDs_0"
+            function changePQVideo(click)
+            {
+                document.getElementById("pqVideo").src = video[click]
+            }
+            function changeP4AVideo(click)
+            {
+                document.getElementById("p4aVideo").src = video[click]
+            }
+            function changePDVideo(click)
+            {
+                document.getElementById("pdVideo").src = video[click]
+            }
+        </script>
     </head>
     <body style="background-color: gray;">
 
@@ -18,11 +41,7 @@
                     Home
                 </a>
             </div>
-            <div class="item2">
-                <a href="main-games.html">
-                    Main Games
-                </a>
-            </div>
+             
             <div class="item3">
                 Spin-Offs
             </div>
@@ -51,7 +70,8 @@
                     <p style="text-align: center; font-size: 30px">
                         There have been many Persona spin-offs released throughout the years, many of which that expand the <br>
                         story of the main games they're based off of! Whether you're looking for a more laid-back rhythm game, <br>
-                        or maybe a more fast-paced, action packed Musou game experience, there's plenty of Persona spin-offs for you!
+                        or maybe a more fast-paced, action packed Musou game experience, there's plenty of Persona spin-offs for you! <br>
+                        (Many of these spin offs have multiple parts! Click the logos in each section to swap between trailers!)
                     </p>
                 </span>
             </div>
@@ -60,9 +80,32 @@
        
         <div class="pqArea">
             <div>
-                <img src=Images/PQ/PersonaQLogo.png width="400px" height="200px" style="position: relative; top: 100px; left: 2%">
-                <img src=Images/PQ/PersonaQ2Logo.png width="400px" height="200px" style="position: relative; top: 300px; right: 23%">
-                <span style="position: relative; left: 200px; bottom: 50px">
+                <button class="imageButton" onclick="changePQVideo(1)" style="position: relative; top: 80px">
+                    <img src=Images/PQ/PersonaQLogo.png width="100%" height="100%">
+                </button>
+                <button class="imageButton" onclick="changePQVideo(2)" style="position: relative; top: 80px">
+                    <img src=Images/PQ/PersonaQ2Logo.png width="100%" height="100%">
+                </button>
+                <div class="pqBox" style="position: relative; top: 100px">
+                    <iframe 
+                        id="pqVideo"
+                        width="104%" 
+                        height="108%" 
+                        src="https://www.youtube.com/embed/3AALUT7rqZY" 
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="
+                            accelerometer;  
+                            clipboard-write; 
+                            encrypted-media; 
+                            gyroscope; 
+                            picture-in-picture" 
+                        allowfullscreen
+                        style="position:relative; right:2%; bottom: 4%"
+                        >
+                    </iframe>
+                </div>
+                <span style="position: relative; left: 300px; bottom: 290px">
                 <h2 style="text-align: center; font-size:300%;">Make your way through various <br>labyrinths and dungeons in Persona Q!</h2>
                 <p style="text-align: center; font-size:150%">
                     Persona Q and Persona Q2 are both dungeon-crawling JRPGS, taking place <br>
@@ -79,18 +122,45 @@
 
         <div class="p4aArea">
             <div>
-                <img src=Images/P4/Persona4ArenaLogo.png width="400px" height="250px" style="position: relative; top: 50px">
-                <img src=Images/P4/Persona4ArenaUltimaxLogo.png width="400px" height="250px" style="position: relative; top: 300px; right: 20%">
-                <span style="position: relative; left: 200px; bottom: 150px">
-                <h2 style="text-align: center; font-size:200%;">Face-off and clash against your fellow <br>Persona users in Persona 4 Arena!</h2>
-                <p style="text-align: center; font-size:100%">
-                    Persona Q and Persona Q2 are both dungeon-crawling JRPGS, taking place <br>
-                    in the middle of the various Persona games! The casts of Persona 3, 4 <br>
-                    and 5 are brought together and trapped inside a mysterious world full <br>
-                    of Shadows, and they all have to cooperate to find out what's going on <br> 
-                    and how to escape! The Persona Q games are great games for long time  <br>
-                    Persona fans who want to see all their favorite characters fight and <br>
-                    interact together!
+                <button class="imageButton" onclick="changeP4AVideo(3)"  style="position: relative; top: 50px; height: 25%">
+                    <img src=Images/P4/Persona4ArenaLogo.png width="100%" height="100%">
+                </button>
+                <button class="imageButton" onclick="changeP4AVideo(4)" style="position: relative; top: 50px; height: 25%; z-index: 1">
+                    <img src=Images/P4/Persona4ArenaUltimaxLogo.png width="100%" height="100%">
+                    <!--interesting bit about the z-index: without it, only the top half of the image triggers the iframe change...
+                    i'm guessing the span for the text next to it was covering the button, but i'm not sure, so this is my quick fix-->
+                </button>
+                
+                <div class="p4aBox" style="position: relative; top: 60px">
+                    <iframe 
+                        id="p4aVideo"
+                        width="104%" 
+                        height="108%" 
+                        src="https://www.youtube.com/embed/zD1Ea7satoQ" 
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="
+                            accelerometer;  
+                            clipboard-write; 
+                            encrypted-media; 
+                            gyroscope; 
+                            picture-in-picture" 
+                        allowfullscreen
+                        style="position:relative; right:2%; bottom: 4%"
+                        >
+                    </iframe>
+                </div>
+                <span style="position: relative; left: 300px; bottom: 400px">
+                <h2 style="text-align: center; font-size:180%;">Face-off and clash against your fellow <br>Persona users in Persona 4 Arena!</h2>
+                <p style="text-align: center; font-size:90%">
+                    Persona 4 Arena and Persona 4 Arena Ultimax are both 2D fighting games <br>
+                    that have you battling your fellow Persona users! Taking place directly <br>
+                    after the story of Persona 4, get to the bottom of why the Midnight  <br>
+                    Channel is being broadcast again and who's behind it! You won't be alone <br> 
+                    either, as you'll be joined by the Shadow Operatives, an organization <br>
+                    led by Mitsuru Kirijo that features your favorite Persona 3 characters! <br>
+                    Feel the heat and experience the intense, dread-filled story of the Arena <br>
+                    games with these incredible spin-offs, perfect for fans of both Persona 3 and 4!
                 </p>
                 </span>
             </div>
@@ -98,10 +168,35 @@
 
         <div class="pdArea">
             <div>
-                <img src=Images/P5/Persona5DancingLogo.png width="280px" height="250px" style="position: relative; top: 50px">
-                <img src=Images/P3/P3DLogo.webp width="300px" height="230px" style="position: relative; top: 30px">
-                <img src=Images/P4/Persona4DancingLogo.webp width="280px" height="230px" style="position: relative; top: 300px; right: 27%">
-                <span style="position: relative; left: 250px; bottom: 100px">
+                <button class="imageButton" onclick="changePDVideo(5)" style="position: relative; top: 50px; width:13%; height:25%">
+                    <img src=Images/P5/Persona5DancingLogo.png width="100%" height="100%">
+                </button>
+                <button class="imageButton" onclick="changePDVideo(6)" style="position: relative; top: 50px; width:14%; height:25%">
+                    <img src=Images/P4/Persona4DancingLogo.webp width="100%" height="100%">
+                </button>
+                <button class="imageButton" onclick="changePDVideo(7)" style="position: relative; top: 50px; width:14%; height:25%">
+                    <img src=Images/P3/P3DLogo.webp width="100%" height="100%">
+                </button>
+                <div class="p4aBox" style="position: relative; top: 60px">
+                    <iframe 
+                        id="pdVideo"
+                        width="104%" 
+                        height="108%" 
+                        src="https://www.youtube.com/embed/b0YpE76JQoM" 
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="
+                            accelerometer;  
+                            clipboard-write; 
+                            encrypted-media; 
+                            gyroscope; 
+                            picture-in-picture" 
+                        allowfullscreen
+                        style="position:relative; right:2%; bottom: 4%"
+                        >
+                    </iframe>
+                </div>
+                <span style="position: relative; left: 300px; bottom: 350px">
                 <h2 style="text-align: center; font-size:300%;">Get groovy and dance off with <br> your friends in the Persona Dancing series!</h2>
                 <p style="text-align: center; font-size:150%">
                     The Persona Dancing games are great titles for Persona fans who absolutely <br>
@@ -118,17 +213,35 @@
 
         <div class="p5sArea">
             <div>
-                <img src=Images/P5/Persona5StrikersLogo.png width="350px" height="300px" style="position: relative; top: 150px; left: 3%">
-                <span style="position: relative; left: 200px; bottom: 150px">
-                <h2 style="text-align: center; font-size:300%;">Travel across Japan and steal <br>hearts once again in Persona 5 Strikers!</h2>
-                <p style="text-align: center; font-size:150%">
-                    Taking place directly after the events of Persona 5, dive into <br>
-                    a new story where you'll travel across Japan and change the hearts <br>
-                    of many more criminals across the country! Infiltrate the many Jails <br>
-                    that have popped up in the Metaverse, and experience the action-packed <br> 
-                    hack-and-slash gameplay that still retains the classic Persona charm <br>
-                    in this critically acclaimed sequal to Persona 5!
-                </p>
+                <img src=Images/P5/Persona5StrikersLogo.png width="19%" height="35%" style="position: relative; top: 30px; left: 150px">
+                <div class="p5Box" style="position: relative; top: 50px">
+                    <iframe 
+                        width="104%" 
+                        height="108%" 
+                        src="https://www.youtube.com/embed/wTp_q76UWBo" 
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="
+                            accelerometer;  
+                            clipboard-write; 
+                            encrypted-media; 
+                            gyroscope; 
+                            picture-in-picture" 
+                        allowfullscreen
+                        style="position:relative; right:2%; bottom: 4%"
+                        >
+                    </iframe>
+                </div>
+                <span style="position: relative; left: 300px; bottom: 350px">
+                    <h2 style="text-align: center; font-size:300%;">Travel across Japan and steal <br>hearts once again in Persona 5 Strikers!</h2>
+                    <p style="text-align: center; font-size:150%">
+                        Taking place directly after the events of Persona 5, dive into <br>
+                        a new story where you'll travel across Japan and change the hearts <br>
+                        of many more criminals across the country! Infiltrate the many Jails <br>
+                        that have popped up in the Metaverse, and experience the action-packed <br> 
+                        hack-and-slash gameplay that still retains the classic Persona charm <br>
+                        in this critically acclaimed sequal to Persona 5!
+                    </p>
                 </span>
             </div>
         </div>
