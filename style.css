@@ -63,7 +63,7 @@
             .nav
             {
                 display: grid;
-                grid: 50px / auto auto auto auto auto;
+                grid: 50px / auto auto auto;
                 grid-gap: 10px;
                 padding: 10px;
                 background-color: rgb(231, 54, 54);
@@ -87,6 +87,20 @@
                 border: 0px;
                 height: 20%;
                 width: 20%;
+            }
+
+            .formStyle
+            {
+                position: relative; 
+                top: 430px; 
+                font-size: 40px; 
+                text-align: center;
+                line-height: 40px;
+            }
+            
+            .inputField
+            {
+                height: 30px;
             }
 
             .main
@@ -424,6 +438,53 @@
                 background-image: url(Images/P5/Persona5StrikersBackground.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
+                font-family: "P5Font";
+                color: white;
+                padding: 20px;
+            }
+
+            .p4uNewsArea
+            {
+                height: 450px;
+                background-color: rgb(189, 0, 0);
+                background-image: url(Images/P4A/ultimax-background.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                font-family: "FOT-SkipStd";
+                color: white;
+                padding: 20px;
+            }
+
+            .p4aBox
+            {
+                background-color: rgb(117, 206, 0);
+                height: 42%;
+                width: 36.5%;
+                border: 10px solid black;
+                font-size: 130%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .shopAtlusArea
+            {
+                height: 450px;
+                background-color: rgb(226, 0, 0);
+                background-image: url(Images/ShopAtlus.png);
+                background-repeat: no-repeat;
+                background-size:cover;
+                font-family: "P5Font";
+                color: white;
+                padding: 20px;
+            }
+
+            .persona25Area
+            {
+                height: 450px;
+                background-color: rgb(226, 0, 0);
+                background-image: url(Images/p25background.png);
+                background-repeat: no-repeat;
+                background-size:cover;
                 font-family: "P5Font";
                 color: white;
                 padding: 20px;

@@ -2,6 +2,37 @@
     <head>
         <title>Persona Zone - New to Persona</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            news = new Array()
+            news[0] = "p4uRelease"
+            news[1] = "persona25"
+            news[2] = "shopAtlus"
+            activePanel = 0
+            function back()
+            {
+                if(activePanel == 0)
+                {
+                    activePanel = 2
+                }
+                else
+                {
+                    activePanel = activePanel - 1
+                }
+                document.getElementById("news").src = news[activePanel] + ".html"
+            }
+            function next()
+            {
+                if(activePanel == 2)
+                {
+                    activePanel = 0
+                }
+                else
+                {
+                    activePanel = activePanel + 1
+                }
+                document.getElementById("news").src = news[activePanel] + ".html"
+            }
+        </script>
     </head>
     <body style="background-color: gray;">
 
@@ -20,23 +51,37 @@
             </div>
              
             <div class="item3">
-                Spin-Offs
-            </div>
-            <div class="item4">
-                <a href="history.html">
-                    History
+                <a href="spin-offs.html">
+                    Spin-Offs
                 </a>
             </div>
+             
             <div class="item5">
-                <a href="new-to-persona.html">
-                    New to Persona
-                </a>
+                New to Persona
             </div>
-            <div class="item6">
-                <a href="quiz.html">
-                    Quiz
-                </a>
-            </div>
+             
         </div>
         <!--End logo, title, and nav bar-->
+
+        <div class="main">
+            <button class="imageButton" onclick="back()" style="height: 20%; width: 10%">
+                <img src="Images/P5/knife-arrow-prev.png" height="100%" width="100%" style="position: relative; top: 200px; left: 15px">
+            </button>
+            
+            <span style="position: absolute; left: 200px; height:500px; width: 1000px ">
+                <iframe id="news" width="100%" height="100%" src="p4uRelease.html" frameborder="0" scrolling="no">
+                </iframe>
+            </span>
+            <button class="imageButton" onclick="next()" style="height: 20%; width: 10%">
+                <img src="Images/P5/knife-arrow-next.png" height="100%" width="100%" style="position: relative; top: 215px; left: 1100px">
+            </button>
+
+            <form class="formStyle">
+                Want to recieve news about upcoming Persona games?: <br>
+                Name <input class="inputField" type="text" name="who"> 
+                Email <input class="inputField" type="email" name="mail"> 
+                Phone Number <input class="inputField" type="number" name="phone"> <br>
+                <button style="position:relative;top: 10px"value="Submit">Submit</button>
+            </form>
+        </div>
 </html>
